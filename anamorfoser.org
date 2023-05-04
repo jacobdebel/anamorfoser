@@ -1,0 +1,823 @@
+#+title: Anamorfoser...
+#+subtitle: A hva' for en fisk?
+#+author: Matematik
+#+date: Vibenshus Gymnasium
+# Themes: beige|black|blood|league|moon|night|serif|simple|sky|solarized|white
+#+reveal_theme: sky
+#+reveal_title_slide: <h2>%t</h2><h3>%s</h3><h4>%a</h4><h4>%d</h4>
+#+reveal_title_slide_background: ./img/honda-false-floor-2.png
+#+reveal_default_slide_background:
+#+reveal_extra_options: slideNumber:"c/t",progress:true,transition:"slide",navigationMode:"default",history:false,hash:true
+# #+reveal_extra_attr: style="color:red"
+#+options: toc:nil num:nil tags:nil timestamp:nil ^:{}
+
+# Tirsdag 
+* Ja, Anamorfoser
+F.eks. 3D-reklamer på stadioner
+
+[[./img/reklame.jpg]]
+
+
+* Lidt mere inspiration
+#+begin_export html
+<iframe width="800" height="450" src="https://www.youtube.com/embed/tBNHPk-Lnkk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+#+end_export
+
+* Matematikken bag
+
+* 3D-koordinatsystemet
+#+reveal_html: <div style="font-size: 60%;">
+- Nu også en tredje akse, z-aksen.
+- En af mange højrehåndsregler.
+
+#+attr_html: :height 400 :width auto 
+[[./img/hoejrehaandsreglen.jpg]]
+
+#+reveal: split
+*Geogebra* kan også.
+
+#+reveal_html: <div class="column" style="float:left; width: 70%">
+#+begin_export html
+<iframe
+width="1000"
+height="800"
+src="./ggb/geogebra-3D.html"
+title=""
+frameborder="0"
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+allowfullscreen>
+</iframe>
+#+end_export
+#+reveal_html: </div>
+
+#+reveal_html: <div class="column" style="float:right; width: 30%">
+#+reveal_html: <div style="font-size: 60%;">
+- Zoom : scrollhjul
+- Rotér : venstre musetast 
+- Panorér : Shift + venstre musetast
+- Stræk akserne : Shift + venstre musetast *over en af aksernse*
+#+reveal_html: </div>
+
+* Punkter og vektorer i 3D
+#+reveal_html: <div style="font-size: 60%;">
+- Der gælder de samme regler, som i 2D.
+- Dog med tre koordinater i stedet for to.
+
+** Punkter
+#+reveal_html: <div style="font-size: 40%;">
+#+reveal_html: <div class="column" style="float:left; width: 50%">
+
+\begin{align*}
+A &= (3, 2, 5) \\
+B &= (-1, 1, 3) \\
+C &= (4, 5, 0) 
+\end{align*}
+
+*Afstandsformlen*
+
+$$\left| AB \right| = \sqrt{\left( B_{x} - A_x\right)^2+\left( B_y - A_y \right)^2+\left( B_z-A_z \right)^2}$$
+#+reveal_html: </div>
+
+#+reveal_html: <div class="column" style="float:right; width: 50%">
+*Eksempel*
+
+\begin{align*}
+\left| AB \right| &= \sqrt{\left( B_{x} - A_x\right)^2+\left( B_y - A_y \right)^2+\left( B_z-A_z \right)^2} \\
+\left| AB \right| &= \sqrt{\left( -1 - 3\right)^2+\left( 1 - 2 \right)^2+\left( 3-5 \right)^2} \\
+\left| AB \right| &= 4.583
+\end{align*}
+
+*Opgave*
+
+- Beregn $\left| AC \right|$ og $\left| BC \right|$
+#+reveal_html: </div>
+
+** Vektorer
+#+reveal_html: <div style="font-size: 40%;">
+#+reveal_html: <div class="column" style="float:left; width: 50%">
+*Vektor mellem to punkter A og B*
+
+$$\overrightarrow{AB} = \begin{pmatrix} B_x - A_x \\ B_y - A_y \\ B_z - A_z \\ \end{pmatrix}$$
+
+*Længde af vektor $\vec{a}$*
+
+\begin{align*}
+\vec{a} &= \begin{pmatrix} a_x \\ a_y \\ a_z \end{pmatrix} \\
+\left| \vec{a} \right| &= \sqrt{a_x^2 + a_y^2 + a_z^2}
+\end{align*}
+
+*Skalarprodukt mellem $\vec{a}$ og $\vec{b}$*
+
+$$\vec{a} \cdot \vec{b} = \begin{pmatrix} a_x \\ a_y \\ a_z \end{pmatrix} \cdot \begin{pmatrix} b_x \\ b_y \\ b_z \end{pmatrix} = a_x \cdot b_x + a_y \cdot b_y + a_z \cdot b_z$$
+#+reveal_html: </div>
+
+#+reveal_html: <div class="column" style="float:right; width: 50%">
+\begin{align*}
+A &= (3, 2, 5) \\
+B &= (-1, 1, 3) \\
+C &= (4, 5, 0) 
+\end{align*}
+
+*Opgave*
+
+- Bestem koordinaterne til $\overrightarrow{AB}$ og $\overrightarrow{AC}$.
+- Bestem skalarproduktet $\overrightarrow{AB} \cdot \overrightarrow{AC}$.
+#+reveal_html: </div>
+
+** Tjek efter i ggb
+#+reveal_html: <div style="font-size: 60%;">
+#+reveal_html: <div class="column" style="float:left; width: 70%">
+#+begin_export html
+<iframe
+width="1000"
+height="800"
+src="./ggb/geogebra-3D.html"
+title=""
+frameborder="0"
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+allowfullscreen>
+</iframe>
+#+end_export
+#+reveal_html: </div>
+
+#+reveal_html: <div class="column" style="float:right; width: 30%">
+- Punkter nanvgives typisk med store bogstaver =A=(3,2,5)=
+- Vektorer navngives typisk med små bogstaver =u=(1,2,3)=
+- Vektor mellem to punkter =Vektor(<Punkt>,<Punkt>)=
+- Skalarprodukt mellem to vektorer =u*v=
+#+reveal_html: </div>
+
+
+
+* Linjer i 3D
+
+** Linjer i 2D
+#+reveal_html: <div style="font-size: 60%;">
+- I kender allerede en ret linje i 2D
+- F.eks. $y=2x + 3$
+
+#+attr_html: :height 400px :width auto
+[[file:img/2022-05-11_11-21-10_screenshot.png]]
+
+** Samme linje i 3D?
+#+reveal_html: <div style="font-size: 60%;">
+#+reveal_html: <div class="column" style="float:left; width: 70%">
+#+begin_export html
+<iframe
+width="1000"
+height="800"
+src="./ggb/geogebra_funktion_i_xy-plan.html"
+title=""
+frameborder="0"
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+allowfullscreen>
+</iframe>
+#+end_export
+
+#+reveal_html: </div>
+
+#+reveal_html: <div class="column" style="float:right; width: 30%">
+- Kan den også tegnes i 3D?
+- Ja da. Men det er ikke så sexet. Den ligger bare i xy-planen
+- Kan den ikke gå op ad z-aksen?
+
+
+#+attr_reveal: :frag (appear)
+- *Ikke umiddelbart!*
+#+reveal_html: </div>
+
+#+reveal: split
+#+reveal_html: <div style="font-size: 60%;">
+- Man kan lave en plan.
+
+#+attr_reveal: :frag (appear)
+- Men det er stadig ikke en linje.
+#+begin_export html
+<iframe
+width="1000"
+height="600"
+src="./ggb/geogebra-ret_linje_xy-plan.html"
+title=""
+frameborder="0"
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+allowfullscreen>
+</iframe>
+#+end_export
+
+
+** Punkter og vektorer to the rescue
+#+attr_reveal: :frag (appear)
+- Vi kan lave rette linjer i 3D vha.
+- *vektorfunktioner/parameterfremstillinger*.
+
+** En linje som en vektorfunktion
+#+reveal_html: <div style="font-size: 40%;">
+#+reveal_html: <div class="column" style="float:left; width: 50%">
+[[./img/vektorfunkntion_ret_linje_3D_hvid.png]]
+#+reveal_html: </div>
+
+#+reveal_html: <div class="column" style="float:right; width: 50%">
+- En *stedvektor* $\overrightarrow{OP}$ skal tegne en ret linje i 3D
+- Den kan konstrueres summen af en vektor, som peger på et *kendt* punkt $P_0$ og en *retningsvektor* multipliceret med en løbende parameter $t$.
+- Altså
+  \begin{align*}
+  \overrightarrow{OP}(t) &= \overrightarrow{OP}_0 + t \cdot \vec{r} \\
+  \begin{pmatrix} x(t) \\ y(t) \\z(t) \end{pmatrix} &= \begin{pmatrix} x_0 \\ y_0 \\ z_0 \end{pmatrix} + t \cdot \begin{pmatrix} r_x \\ r_y \\ r_z \end{pmatrix}
+  \end{align*}
+
+
+#+attr_reveal: :frag (appear)
+- Den tager vi lige i geogebra stille og roligt.
+#+reveal_html: </div>
+
+#+reveal: split
+*En linje som en vektorfunktion i geogebra*
+
+#+begin_export html
+<iframe
+width="1000"
+height="800"
+src="./ggb/geogebra-vektorfunktion_linje.html"
+title=""
+frameborder="0"
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+allowfullscreen>
+</iframe>
+#+end_export
+
+** Opgave
+#+reveal_html: <div style="font-size: 60%;">
+Prøv jeres nyfundne viden af:
+
+#+attr_html: :width 600px
+[[file:img/2022-05-11_15-23-40_screenshot.png]]
+
+#+reveal: split
+*Kan de punkter og vektorer ikke bruges til andet?*
+
+#+attr_reveal: :frag (appear)
+Jo da!
+
+#+reveal: split
+#+begin_export html
+<iframe width="800" height="600" src="https://www.youtube.com/embed/eoqoMtWnYLc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+#+end_export
+
+#+reveal: split
+Vi har da slet ikke fået nok endnu
+#+begin_export html
+<iframe width="800" height="600" src="https://www.youtube.com/embed/ewlLXTzWoN8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+#+end_export
+* Planer i 3D
+#+reveal_html: <div style="font-size: 60%;">
+Ja, lad os så komme i gang!
+
+#+attr_html: :width 600px
+[[file:img/2022-05-11_17-11-31_screenshot.png]]
+** Planens parameterfremstilling
+#+reveal_html: <div style="font-size: 60%;">
+#+reveal_html: <div class="column" style="float:left; width: 50%">
+[[./img/plan_parameterfremstilling_hvid.png]]
+#+reveal_html: </div>
+
+#+reveal_html: <div class="column" style="float:right; width: 50%">
+For en plan skal vi bruge et kendt punkt, *to* (ikke parallelle) retningvektorer samt *to* løbende parametre.
+
+Altså
+
+\begin{align*}
+\overrightarrow{OP} (s,t) &= \overrightarrow{OP}_0 + s \cdot \vec{r}_1 + t \cdot \vec{r}_2 \\
+\begin{pmatrix} x(s,t) \\ y(s,t) \\ x(s,t) \end{pmatrix} &= \begin{pmatrix} x_0 \\ y_0 \\ z_0 \end{pmatrix} + s \cdot \begin{pmatrix} r_{1_x} \\ r_{1_y} \\ r_{1_z} \end{pmatrix} + t \cdot \begin{pmatrix} r_{2_x} \\ r_{2_y} \\ r_{2_z} \end{pmatrix}
+\end{align*}
+#+reveal_html: </div>
+** Den ta'r vi lige i ggb
+#+begin_export html
+<iframe
+width="1000"
+height="800"
+src="./ggb/geogebra-plan_parameterfremstilling_2.html"
+title=""
+frameborder="0"
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+allowfullscreen>
+</iframe>
+#+end_export
+** Opgave
+#+reveal_html: <div style="font-size: 60%;">
+Tre punkter $A=(1, 4, -8)$, $B=(0,5,3)$ og $C=(-6,7,2)$ er beliggende i planen $\alpha$.
+
+1. Angiv en (af flere) parameterfremstilling for planen $\alpha$.
+2. Find skæringspunktet mellem planen $\alpha$ og linjen $l: \begin{pmatrix} x(u) \\ y(u) \\ z(u) \end{pmatrix} = \begin{pmatrix} 0 \\ -4 \\ 2 \end{pmatrix} + u \cdot \begin{pmatrix} -1 \\ 10 \\ 12 \end{pmatrix}$.
+
+   Hints:
+   - Opstil 3 ligninger med 3 ubekendte ved sætte hhv x, y og z lig hinanden for linjen og planen.
+   - Løs ligningssystemet for s, t og u vha CAS (geogebra, wordmat, maple etc)
+   - Indsæt den fundne u-værdi i linjens parameterfremstilling og bestem herved koordinaterne til skæringspunktet.
+
+#+reveal: split
+#+reveal_html: <div style="font-size: 60%;">
+*3 ligninger med 3 ubekendte??*
+#+begin_export html
+<iframe
+width="600"
+height="400"
+src="https://giphy.com/embed/4JVTF9zR9BicshFAb7"
+title=""
+frameborder="0"
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+allowfullscreen>
+</iframe>
+#+end_export
+
+#+attr_reveal: :frag (appear)
+Det må kunne gøres nemmere.
+
+** Planens ligning i 3D
+[[./img/2022-05-11_17-11-31_screenshot.png]]
+#+reveal: split
+*Planens ligning på normalform*
+
+#+reveal_html: <div style="font-size: 50%;">
+#+reveal_html: <div class="column" style="float:left; width: 60%">
+- Med en /normalvektor/ $\vec{n} = \begin{pmatrix} a \\ b \\ c \end{pmatrix}$,
+- et /kendt/ punkt $P_0 = (x_0, y_0 , z_0)$ i planen
+- samt et /vilkårligt/ punkt i planen $P=(x,y,z)$,
+- er det muligt at opbygge en /ligning/ for planen vha følgende skalarprodukt:
+
+\begin{align*}
+\vec{n} \cdot \overrightarrow{P_0 P} &= \begin{pmatrix} a \\ b \\ c \end{pmatrix} \cdot \begin{pmatrix} x-x_0 \\ y- y_0 \\ z-z_0\end{pmatrix} =0 \\
+&= \boxed{a \cdot \left(x-x_0\right) +b \cdot \left(y-y_0\right) + c \cdot \left(z-z_0\right) = 0}
+\end{align*}
+#+reveal_html: </div>
+
+#+reveal_html: <div class="column" style="float:right; width: 40%">
+[[./img/planens_ligning_hvid.png]]
+#+reveal_html: </div>
+
+#+reveal: split
+*Normalvektor og krydsprodukt*
+
+#+reveal_html: <div style="font-size: 40%;">
+
+#+reveal_html: <div class="column" style="float:left; width: 45%">
+- En plans normalvektor står /vinkelret/ på planen.
+- En normalvektor kan dannes vha /krydsproduktet/ mellem planens to retningsvektorer
+\begin{align*}
+\vec{n} &= \vec{r}_1 \times \vec{r}_2 = \begin{pmatrix} r_{1_x} \\ r_{1_y} \\ r_{1_z} \end{pmatrix} \times \begin{pmatrix} r_{2_x} \\ r_{2_y} \\ r_{2_z} \end{pmatrix} \\
+&= \begin{pmatrix} \begin{vmatrix} r_{1_y} & r_{2_y} \\ r_{1_z} & r_{2_z} \end{vmatrix} \\ - \begin{vmatrix} r_{1_x} & r_{2_x} \\ r_{1_z} & r_{2_z} \end{vmatrix} \\\begin{vmatrix} r_{1_x} & r_{2_x} \\ r_{1_y} & r_{2_y} \end{vmatrix}\end{pmatrix} = \begin{pmatrix} r_{1_y}\cdot r_{2_z} - r_{1_z}\cdot r_{2_y} \\ - \left( r_{1_x}\cdot r_{2_z} - r_{1_z}\cdot r_{2_x} \right) \\ r_{1_x} \cdot r_{2_y} - r_{1_y}\cdot r_{2_x}\end{pmatrix}
+\end{align*}
+
+#+reveal_html: </div>
+
+#+reveal_html: <div class="column" style="float:right; width: 55%">
+
+#+DOWNLOADED: screenshot @ 2022-05-11 22:30:17
+#+attr_html: :width 600px
+#+attr_latex: :width 7cm
+[[file:img/2022-05-11_22-30-17_screenshot.png]]
+- Tjek lige, at det stemmer på figuren.
+#+reveal_html: </div>
+
+** Simpel opgave
+#+reveal_html: <div style="font-size: 60%;">
+#+reveal_html: <div class="column" style="float:left; width: 50%">
+- Find den simplest mulige ligning til hhv. xy-, xz- og yz-planen.
+- Alle hjælpemidler er tilladte.
+#+reveal_html: </div>
+
+#+reveal_html: <div class="column" style="float:right; width: 50%">
+#+attr_html: :width 600px
+[[file:img/2022-05-11_22-35-40_screenshot.png]]
+
+#+reveal_html: </div>
+
+* Skæringspunkt mellem linje og plan
+#+reveal_html: <div style="font-size: 40%;">
+#+reveal_html: <div class="column" style="float:left; width: 50%">
+Lad os bestemme skæringspunktet mellem linjen $l: \begin{pmatrix} x(t) \\ y(t) \\ z(t) \end{pmatrix} = \begin{pmatrix} 0 \\ -4 \\ 2 \end{pmatrix} + t \cdot \begin{pmatrix} -1 \\ 10 \\ 12 \end{pmatrix}$ og xy-planen efter opskriften:
+
+1. Indsæt udtrykkene for x(t), y(t) og z(t) for /linjens/ parameterfremstilling på x's, y's og z's plads i /planens/ ligning.
+2. Isolér t i den fremkomne ligning (*Ahh, nu er der kun én ligning, der skal løses*)
+3. Indsæt t i linjens parameterfremstilling.
+#+reveal_html: </div>
+
+#+reveal_html: <div class="column" style="float:right; width: 50%">
+#+attr_reveal: :frag (appear)
+- xy-planen kan beskrives med ligningen $$z=0$$
+- $z(t)=2+t \cdot 12$ indsættes i stedet for x i planens ligning, $$2+12t = 0$$
+- Ligningen løses til $$t=-\frac{1}{6}$$
+- Resultatet indsættes i linjens parameterfremstilling,
+  $$\begin{pmatrix} x\left(-\frac{1}{6}\right) \\ y\left(-\frac{1}{6}\right) \\ z\left(-\frac{1}{6}\right) \end{pmatrix} = \begin{pmatrix} 0 \\ -4 \\ 2 \end{pmatrix} - \frac{1}{6} \cdot \begin{pmatrix} -1 \\ 10 \\ 12 \end{pmatrix}=\begin{pmatrix} 0.1667 \\ -5.667 \\ 0\end{pmatrix}$$
+#+reveal_html: </div>
+#+reveal: split
+Det ser da meget rigtigt ud!
+
+#+attr_html: :width 600px
+[[file:img/2022-05-11_23-06-13_screenshot.png]]
+
+
+
+
+
+
+* Design af simpel anamorfose
+* V for Vibenshus 
+** a4-papir
+#+reveal_html: <div style="font-size: 60%;">
+#+reveal_html: <div class="column" style="float:left; width: 50%">
+- Afsæt hjørnerne af et a4-papir i xy-planen i geogebra.
+- a4 har dimensionerne: bredde 21 cm, højde 29.7 cm
+- Ét forslag kan være punkterne
+  - (0,0,0)
+  - (21,0,0)
+  - (21,29.7,0)
+  - (0,29.7,0)
+#+reveal_html: </div>
+
+#+reveal_html: <div class="column" style="float:right; width: 50%">
+#+DOWNLOADED: screenshot @ 2022-05-09 16:54:47
+#+attr_html: :width 600px
+#+attr_latex: :width 7cm
+[[file:img/2022-05-09_16-54-47_screenshot.png]]
+#+reveal_html: </div>
+
+** Opretstående V
+#+reveal_html: <div style="font-size: 60%;">
+#+reveal_html: <div class="column" style="float:left; width: 50%">
+- Tegn en skitse af et stort V på et stykke papir.
+- Indsæt punkter, som kan hjælpe til med at tegne konturen af bogstavet V.
+- F.eks.
+  - (8,0,0)
+  - (2.67,0,8)
+  - (6.67,0,8)
+  - (10,0,3)
+  - (13.33,0,8)
+  - (17.33,0,0)
+  - (12,0,0)
+- Det angivne V er konstrueret til at have en højde på 8 cm.
+#+reveal_html: </div>
+
+#+reveal_html: <div class="column" style="float:right; width: 50%">
+#+DOWNLOADED: screenshot @ 2022-05-09 16:57:09
+#+attr_html: :width 600px
+#+attr_latex: :width 7cm
+[[file:img/2022-05-09_16-57-09_screenshot.png]]
+#+reveal_html: </div>
+
+** Valg af synspunkt
+#+reveal_html: <div style="font-size: 60%;">
+#+reveal_html: <div class="column" style="float:left; width: 50%">
+- Vælg et passende punkt, hvorfra V'et skal betragtes.
+- F.eks.
+  - (10,-40,30)
+- Det angivne synspunkt er valgt til at være 40 cm og 30 cm fra det opstillede V i hhv. vandret og lodret retning.
+#+reveal_html: </div>
+
+#+reveal_html: <div class="column" style="float:right; width: 50%">
+#+DOWNLOADED: screenshot @ 2022-05-09 16:57:52
+#+attr_html: :width 600px
+#+attr_latex: :width 7cm
+[[file:img/2022-05-09_16-57-52_screenshot.png]]
+#+reveal_html: </div>
+
+** Synslinjer
+#+reveal_html: <div style="font-size: 40%;">
+#+reveal_html: <div class="column" style="float:left; width: 50%">
+- Opstil vektorfunktioner for alle linjer, som går fra synspunktet til punkterne på V'et.
+  - Bestem først en retningsvektor, med koordinaterne $\vec{r} = \begin{pmatrix} r_x\\r_y\\r_z \end{pmatrix}$.
+  - Vælg et kendt, som linjen går igennem (f.eks. synspunktet), med koordinaterne $P_0 = \begin{pmatrix} P_x \\ P_y \\ P_z \end{pmatrix}$
+  - Kombinér til en vektorfunktion af typen $$\begin{pmatrix} x(t) \\ y(t) \\ z(t) \end{pmatrix} = \begin{pmatrix} r_x \cdot t + P_x\\ r_y \cdot t + P_y \\ r_z \cdot t +P_z \end{pmatrix}$$
+- Hvis I er smarte, kan I oprette en funktion/ligning, hvor I kun skal ændre på koordinaterne til ét punkt.
+- Indskriv jeres linjer vha kommando'en =curve=/=kurve= i geogebra.
+- (Alternativt kan man kontruere alle linjer i geogebra, men så skal I regne jer frem til mindst to af linjerne).
+#+reveal_html: </div>
+
+#+reveal_html: <div class="column" style="float:right; width: 50%">
+#+DOWNLOADED: screenshot @ 2022-05-09 16:59:26
+#+attr_html: :width 600px
+#+attr_latex: :width 7cm
+[[file:img/2022-05-09_16-59-26_screenshot.png]]
+#+reveal_html: </div>
+
+** Afmærkning på vandret plan
+#+reveal_html: <div style="font-size: 60%;">
+#+reveal_html: <div class="column" style="float:left; width: 50%">
+- Bestem skæringspunkterne mellem synslinjerne og planen for a4-papiret (xy-planen).
+  - Indsæt linjens parameterfremstilling på x,y og z's plads i planens ligning.
+  - Løs den fremkomne ligning for t.
+  - Indsæt t i linjens parameterfremstilling for at bestemme koordinaterne til skæringspunktet.
+- Igen, hvis I er snu, kan I konstruere en funktion/ligning, så der kun skal ændres få tal fra gang til gang.
+- (Alternativt kan skæringspunkterne bestemmes direkte i geogebra. Husk igen at regne jer frem til mindst to skæringspunkter.)
+#+reveal_html: </div>
+
+#+reveal_html: <div class="column" style="float:right; width: 50%">
+
+#+DOWNLOADED: screenshot @ 2022-05-09 17:00:51
+#+attr_html: :width 600px
+#+attr_latex: :width 7cm
+[[file:img/2022-05-09_17-00-51_screenshot.png]]
+
+#+reveal_html: </div>
+
+** Den store finale
+#+reveal_html: <div style="font-size: 60%;">
+#+reveal_html: <div class="column" style="float:left; width: 50%">
+- Overfør jeres skæringspunkter mellem synslinjer og plan til et *rigtigt* a4-papir.
+- Brug lineal og tegneredskaber.
+- Klip jeres V ud af papiret.
+- Læg V'et foran jer.
+- Placér jeres øjne i ca samme punkt, som jeres synspunkt i geogebra.
+- Træder jeres V frem for jer? Så har I gjort et bedre stykke arbejde end mig. :)
+- Det kan hjælpe at holde det ene øje lukket, eller tage et billede med telefonen.
+#+reveal_html: </div>
+
+#+reveal_html: <div class="column" style="float:right; width: 50%">
+#+attr_html: :width 80%
+[[./img/v_for_vibenshus.jpg]]
+#+reveal_html: </div>
+
+* Dagens opgave
+** Udsmyk skolegården med top swag statements
+#+attr_html: :width 500px
+[[./img/mat_er_gud_1.png]]
+
+#+attr_reveal: :frag (appear)
+Men I kan gøre det bedre end det!
+** Regler
+#+reveal_html: <div style="font-size: 60%;">
+- Hver klasse/gruppe får en position/et vindue på en etage i hovedbygningen eller kantinebygningen.
+- Udvælg et område i skolegården. Der skal være plads til alle!
+- Udmål og opstil et rumligt koordinatsystem, hvor jeres synspunkt og område kan placeres hensigtsmæssigt.
+- Design bogstaver, ord, symboler, etc. med udgangspunkt i jeres synspunkt og område.
+- Overfør til papirsdug.
+- Afprøv jeres mesterværker i skolegården!
+** Inspiration
+#+reveal_html: <div style="font-size: 60%;">
+#+attr_html: :width 600px
+[[./img/mat_1.png]]
+- Bogstaverne er ca 3.5 meter høje (lange)
+
+#+reveal: split
+#+reveal_html: <div style="font-size: 60%;">
+Resultatet
+
+#+attr_html: :width 600px
+[[./img/mat_2.png]]
+- Bogstaverne er designet til at se ud til at være 1.2 meter høje.
+- 3D-effekten er nok bedst med mennesker på billedet.
+
+#+reveal: split
+#+reveal_html: <div style="font-size: 60%;">
+
+#+reveal_html: <div class="column" style="float:left; width: 50%">
+#+attr_html: :width 600px
+[[./img/mat_3.png]]
+- Det er godt, at de holder fast, så det ikke vælter.
+#+reveal_html: </div>
+
+#+reveal_html: <div class="column" style="float:right; width: 50%">
+#+attr_html: :width 600px
+[[./img/mat_4.png]]
+- Nu med 3D-effekt!
+#+reveal_html: </div>
+** Reglerne igen
+#+reveal_html: <div style="font-size: 60%;">
+- Hver klasse/gruppe får en position/et vindue på en etage i hovedbygningen eller kantinebygningen.
+- Udvælg et område i skolegården. Der skal være plads til alle!
+- Udmål og opstil et rumligt koordinatsystem, hvor jeres synspunkt og område kan placeres hensigtsmæssigt.
+- Design bogstaver, ord, symboler, etc. med udgangspunkt i jeres synspunkt og område.
+- Overfør til papirsdug.
+- Afprøv jeres mesterværker i skolegården!
+** God arbejdslyst!
+
+# Torsdag 
+* Men, kan det ikke blive vildere end det?
+* Jo da... Vildere klovn, vildere!
+#+begin_export html
+<iframe width="600" height="450" src="https://www.youtube.com/embed/aiMTyBTBZ2Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+#+end_export
+* Vildere anamorfoser
+F.eks.
+- På inder- og ydersider af kegler
+- På overfladen af cylindre
+- Spejlinger i cylindre
+- På vægge og lofter
+* Konkurrence
+- Udsmyk skolen med den vildeste anamorfe reklame for skolen, som I kan komme på.
+- Intern konkurrence i klasserne. Udvælg de 2 bedste forslag fra hver klasse.
+- De vindende forslag, fra hver klasse, konkurrerer med/mod hinanden.
+- Hvis det er rigtig, rigtig godt, må vi tale med ledelsen om muligheden for at lave det til en permanent installation. Ellers må der være tale om en pop-up udstilling. :)
+* Inspiration
+I de følgende slides kommer der en række inspirationskilder suppleret med noget mere baggrundsinfo.
+* Skolens facade
+#+reveal_html: <div style="font-size: 60%;">
+#+reveal_html: <div class="column" style="float:left; width: 50%">
+[[./img/skolens_facade.png]]
+- Design f.eks. tekst, som træder tydeligt frem på skolens facade, når man står det helt rigtige sted på fortorvet.
+- Modellér og konstruér som I har prøvet det før.
+#+reveal_html: </div>
+
+#+reveal_html: <div class="column" style="float:right; width: 50%">
+#+attr_html: :width 300
+[[./img/sundoor2.png]]
+#+attr_html: :width 300
+[[./img/sundoor1.png]]
+#+reveal_html: </div>
+* Anamorfe billeder
+#+attr_html: :width auto :height 500
+[[./img/rubiks_anamorf_a4_hvid_baggrund.jpg]]
+
+#+reveal: split
+
+*DIY anamorfe illusioner*
+
+#+reveal_html: <div style="font-size: 60%;">
+
+#+begin_export html
+<iframe width="800" height="500" src="https://www.youtube.com/embed/rTSRFEnGJ1E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+#+end_export
+
+- =GIMP= anvendes som billedredigeringsværktøj. Det er *opensource* og kan hentes på [[https://www.gimp.org/]].
+- Vi har som udgangspunkt mulighed for at printe i a4 og a3.
+
+* Anamorfoser på cylindre
+#+reveal_html: <div style="font-size: 60%;">
+- De følgende billeder er designet til at blive sat på standard 33 cl. sodavandsdåser.
+
+#+attr_html: :width 600
+[[./img/cylinder_overflade_eksempler.png]]
+
+- Hent et a4papir med billederne [[https://anamorphicart.files.wordpress.com/2010/04/cylind1.pdf][her]].
+- Find mere info om bl.a. transformation af gitter [[https://anamorphicart.wordpress.com/2010/04/22/putting-an-image-onto-a-cylinder/][her]].
+  
+* Anamorfoser på kegler
+#+reveal_html: <div style="font-size: 60%;">
+Man kan lave anamorfoser på indersiden (og ydersiden) af kegler.
+
+#+attr_html: :height 200 :width auto 
+[[./img/kegleanamorfoser_1.png]]
+
+#+attr_html: :height 200 :width auto 
+[[./img/kegleanamorfoser_2.png]]
+
+** Teorien bag
+#+reveal_html: <div style="font-size: 40%;">
+#+reveal_html: <div class="column" style="float:left; width: 50%">
+En generel elliptisk (dobbelt)kegle, der åbner op langs z-aksen, kan skrives som
+$$\frac{x^2}{a^2} + \frac{y^2}{b^2} = \frac{z^2}{c^2}$$
+Hvis man vil flytte spidsen til punktet $(x_0, y_0, z_0)$ er ligningen således ud
+$$\frac{(x-x_0)^2}{a^2} + \frac{(y-y_0)^2}{b^2} = \frac{(z-z_0)^2}{c^2}$$
+En (dobbelt)kegle symmetrisk om y-aksen med højde h og radius r, kan beskrives med ligningen
+$$x^2+z^2 = \frac{r^2}{h^2} \cdot \left( y-h \right)^2$$
+#+reveal_html: </div>
+
+#+reveal_html: <div class="column" style="float:right; width: 50%">
+[[./img/kegleanamorfoser_2.png]]
+#+reveal_html: </div>
+
+#+reveal: split
+#+reveal_html: <div style="font-size: 60%;">
+En (dobbelt)kegle symmetrisk om y-aksen med højde h og radius r, kan beskrives med ligningen
+$$x^2+z^2 = \frac{r^2}{h^2} \cdot \left( y-h \right)^2$$
+#+reveal_html: <div class="column" style="float:left; width: 50%">
+*Procedure*
+
+- Modeller den figur, som skal vises i/på keglen (her M).
+- Bestem parameterfremstilling for linjen gennem synpunktet (her B) og et punkt på figuren (her A).
+- Bestem skæringspunktet mellem linjen og keglen ved at indsætte linjens x-, y- og z-funktioner i keglens ligning og løs for t. Indsæt det fundne t i linjens parameterfremstilling.
+- Nu er punktet på keglen bestemt (her $P(x_1,y_1,z_1)$).
+#+reveal_html: </div>
+
+#+reveal_html: <div class="column" style="float:right; width: 50%">
+[[./img/kegleanamorfoser_2.png]]
+#+reveal_html: </div>
+#+reveal: split
+#+reveal_html: <div style="font-size: 60%;">
+Det er dog besværligt at tegne inde i den færdige kegle. Tegn i stedet på et cirkeludsnit, og fold dette til en kegle efterfølgende.
+#+reveal_html: <div class="column" style="float:left; width: 50%">
+Procedure
+
+- Lad keglens samlingslinje gå langs oversiden af keglen i yz-planen.
+- Bestem afstanden fra keglens spids til punktet (her a) vha $a=\sqrt{x_1^2+\left( y_1-h \right)^2+z_1^2}$.
+- Bestem punktets vinkel yz-planen og punktet (her $\alpha$) vha $\alpha = \tan^{-1}\left(\frac{x_1}{z_1} \right)$
+
+#+attr_html: :width 80%
+[[./img/kegleanamorfoser_2.png]]
+#+reveal_html: </div>
+
+#+reveal_html: <div class="column" style="float:right; width: 50%">
+[[./img/kegleanamorfoser_3.png]]
+#+reveal_html: </div>
+#+reveal: split
+#+reveal_html: <div style="font-size: 60%;">
+Den endelige udfoldning
+
+- Hvis cirkeludsnittets centervinkel til $\frac{2 \pi}{3}$,
+- vil vinklen til punktet målt fra samlingslinjen være $\frac{\alpha}{3}$.
+- Til højre ses det den udfoldede kegle med M'et.
+
+#+attr_html: :width 35% :align left
+[[./img/kegleanamorfoser_3.png]]
+
+#+attr_html: :width 45% :align right
+[[./img/kegleanamorfoser_4.png]]
+
+- Se nærmere her: [[https://www.lmfk.dk/artikler/data/artikler/2103/2103_22.pdf]]
+- og her: [[https://anamorphicart.wordpress.com/2010/04/22/putting-an-image-onto-a-cone/]]
+* Spejling på cylindre
+[[./img/spejling_cylindre.png]]
+** Teorien bag
+#+reveal_html: <div style="font-size: 60%;">
+#+reveal_html: <div class="column" style="float:left; width: 50%">
+- M'et skal forestille at stå oprejst /inde i/ cylinderen.
+- Bestem linje gennem /synspunkt/ og punkt på bogstavet.
+- Bestem skæringspunkt mellem linje og cylinderens overflade. (Der er to skæringspunkter. Vælg den på forsiden).
+- Cylinderens ligning er her $x^2+y^2=R^2$.
+- Skæringspunktet kaldes $P_0(x_0, y_0, z_0)$
+#+reveal_html: </div>
+
+#+reveal_html: <div class="column" style="float:right; width: 50%">
+[[./img/i_cylinder_1.png]]
+#+reveal_html: </div>
+
+#+reveal: split
+#+reveal_html: <div style="font-size: 50%;">
+#+reveal_html: <div class="column" style="float:left; width: 50%">
+- Normalvektor i $P_0$ kan være $\vec{n} = \begin{pmatrix} x_0, y_0, 0 \end{pmatrix}$
+- Retningsvektor for /spejlingslinje/ findes som
+  $$\vec{r}_1 = \vec{r} + 2 \vec{a} = 2 \vec{r}_{\vec{n}} - \vec{r} = 2 \cdot \frac{\vec{r}\cdot \vec{n}}{\left| \vec{n} \right|^2}\cdot \vec{n} - \vec{r}$$
+  hvor $\vec{a} = \vec{r}_{\vec{n}} - \vec{r}$
+- Opstil en parameterfremstilling for refleksionslinjen med $\vec{r}_1$ som retningsvektor og $P_0$ som kendt punkt.
+- *Bestem til sidst skæringspunktet mellem xy-planen og reflekstionslinjen.*
+#+reveal_html: </div>
+
+#+reveal_html: <div class="column" style="float:right; width: 50%">
+[[./img/i_cylinder_1.png]]
+
+#+attr_html: :width 70%
+[[./img/i_cylinder_retningsvektor.png]]
+#+reveal_html: </div>
+
+#+reveal: split
+#+reveal_html: <div style="font-size: 60%;">
+- Man skal gøre dette for mange punkter, da rette linjer i M'et ikke bliver til rette linjer på xy-planen.
+- Brug meget gerne et regneark til opsætning af beregningerne, så I til sidst kun skal indsætte koordinaterne til punkterne på bogstavet.
+- Se mere her: [[https://www.lmfk.dk/artikler/data/artikler/2103/2103_22.pdf]]
+- og her: [[https://anamorphicart.wordpress.com/2010/04/21/cylindrical-mirror-anamorphoses/]]
+
+
+[[./img/i_cylinder_paa_plan.png]]
+
+* På vægge og lofter
+#+reveal_html: <div style="font-size: 60%;">
+#+attr_html: :width auto :height 300 :align left
+[[./img/ikke_plane_anamorfoser.jpeg]]
+#+attr_html: :width auto :height 300 :align right 
+[[./img/ikke_plane_anamorfoser_2.jpeg]]
+
+Find mere info her: [[https://medium.com/@tqvinn/the-secret-to-anamorphic-illusions-853e3674209a]]
+
+* Forstå anamorfe illusioner
+** Lidt matematisk forklaring
+#+begin_export html
+<iframe width="800" height="450" src="https://www.youtube.com/embed/fYfxYogwiVI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+#+end_export
+** TED Talk 
+#+begin_export html
+<iframe width="800" height="450" src="https://www.youtube.com/embed/wujEE3PRVUo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+#+end_export
+** En supplerende forklaring
+#+begin_export html
+<iframe width="800" height="450" src="https://www.youtube.com/embed/ckH3-l2ci6g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+#+end_export
+
+* COMMENT Noter
+** Tirsdag
+*** Introducerende video med anamorfiske illusioner
+
+*** Forudprintede billeder, som skal ses i den rigtige vinkel
+
+*** Demonstration af matematikken bag med et bogstav i geogebra 3D
+
+*** Matematik: Intro til vektorer i 3D, planens ligning/parameterfremstilling og linjens parameterfremstilling
+
+*** Konstruktion af egne bogstaver/tekster/figurer
+- Hver klasse inddeles i mindre hold.
+- Hver klasse får en etage og nogle vinduer at stå ved
+
+*** Afsluttes med fælles rundvisning i hold. Se hinandens arbejder
+
+** Onsdag - Mærsk Rising Star ??
+
+** Torsdag
+*** Oplæg til seje blikfang/reklamer for skolen
+- Tekster på siden af skolen
+- Tekster på fortorvet
+- Figurer på kegler
+- Spejling på cylindre
+*** Eleverne skal selv finde på noget. De kan finde inspiration i teori til keglen og til spejling på cylinder
+*** Teori til keglen
+*** Teori til spejling på cylinder
+*** Konkurrence og måske "permanent" udstilling
+- Prototypen skal forbedres
+- Der skal måske udvikles en vejrbestandig udgave osv.
